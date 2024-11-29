@@ -5,7 +5,7 @@ import configparser
 from anthropic import Anthropic
 from typing import Dict, Any
 
-def extract_text_from_image(image_path: str) -> Dict[str, Any]:
+def extracttext(image_path: str) -> Dict[str, Any]:
     """
     Extract text from an image using Claude 3.5 Sonnet API.
 

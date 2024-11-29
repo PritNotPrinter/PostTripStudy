@@ -1,6 +1,6 @@
 import os
 from datetime import datetime
-from agents.ocr.claude_ocr import extract_text_from_image
+from agents.ocr.claude_ocr import extracttext
 from anthropic import Anthropic
 
 def main():
@@ -24,7 +24,7 @@ def main():
         print(f"Processing image: {image_file}")
         
         try:
-            result = extract_text_from_image(image_path)
+            result = extracttext(image_path)
             print("Extracted text:")
             print(result['extracted_text'])
             
