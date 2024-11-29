@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob's Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Jacob's Notes</h1>
+        <p class="subtitle">
+          Keep track of your notes, assignments, and tests!
+        </p>
+      </header>
+
+      <section class="course-section">
+        <h2>Select Your Course</h2>
+        <div class="form-group">
+          <label for="course">Choose Course:</label>
+          <select id="course">
+            <option value="ICS3UO">ICS3UO: Intro to Computer Science</option>
+            <option value="SCH3UR">SCH3UR: Chemistry</option>
+            <option value="JacobTest">Jacob Test</option>
+            <option value="CLU3MO">CLU3MO: Law</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="date-section">
+        <h2>Set Your Dates</h2>
+        <form action="/action_page.php">
+          <div class="form-group">
+            <label for="day-left">Day Left:</label>
+            <input type="date" id="day-left" name="day-left" />
+          </div>
+          <div class="form-group">
+            <label for="day-back">Day Back:</label>
+            <input type="date" id="day-back" name="day-back" />
+          </div>
+          <button type="submit">Save Dates</button>
+        </form>
+      </section>
+
+      <section class="content-section">
+        <h2>Select Content Type</h2>
+        <div class="form-group">
+          <label for="content-type">Choose Content:</label>
+          <select id="content-type">
+            <option value="notes">Notes</option>
+            <option value="assignments">Past Assignments</option>
+            <option value="tests">Past Tests</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="display-section">
+        <h2 id="display-title">Your Notes:</h2>
+        <p id="display-content">Select a course and content to display.</p>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
