@@ -20,7 +20,7 @@ def extracttext(image_path: str) -> Dict[str, Any]:
     config = configparser.ConfigParser()
     config_path = os.path.join(os.path.dirname(__file__), '..', '..', 'config', '.anthropic_config')
     config.read(config_path)
-    api_key = "sk-ant-api03-Q72ihqTLegJwQJRr0mPL5LUNiX_DkxbxUR4N8A_AH3LbVIjbvcqt0sNsjT9SEHFYk4nM2O7xWr7XcFXR35_IZQ-TBIpkQA"
+    api_key = "insert api key here"
 
 
     anthropic = Anthropic(api_key=api_key)
