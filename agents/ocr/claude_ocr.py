@@ -16,13 +16,13 @@ def extracttext(image_path: str) -> Dict[str, Any]:
         Dict[str, Any]: JSON response containing extracted text and metadata.
     """
     # Read API key from config file
-    api_key = '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'
+    print("line 20, replace api key")
+    api_key = 'api'
 
     anthropic = Anthropic(api_key=api_key)
 
     with open(image_path, "rb") as image_file:
         encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
-    print("line 25")
     response = anthropic.messages.create(
         model="claude-3-5-haiku-20241022",
         max_tokens=100,
