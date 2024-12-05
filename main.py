@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from agents.ocr.claude_ocr import extracttext
 from anthropic import Anthropic
+from config.assignment import Assignments
 
 def main():
     # Specify the path to the data folder
